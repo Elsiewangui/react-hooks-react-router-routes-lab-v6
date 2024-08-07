@@ -1,11 +1,12 @@
+import React from 'react';
 import {Link} from 'react-router-dom';
 
-function MovieCard({title}) {
+function MovieCard({title,id}) {
   
   return (
     <article>
         <h2>{title}</h2>
-        {/* What should go here? */}
+        <a href={`http://localhost/movie/${id}`}>View Info</a>
     </article>
   );
 };
